@@ -1,6 +1,6 @@
 cask "astris" do
-  version "1.0.22,d354de498"
-  sha256 "f8349077669557316fefd7f7f04aa116c4eba3805170d20659bccee0c20a73d1"
+  version "1.0.23,46883fa0b"
+  sha256 "4e514c4cd9b2f3809e4ed289982f8c98030d60dd5550de46edc2c14fd06fdd4b"
 
   url "https://github.com/V380-Ori/Astris.Binaries/releases/download/astris-#{version.csv.first}/Astris-#{version.csv.first}%2B#{version.csv.second}.dmg",
       verified: "github.com/V380-Ori/Astris.Binaries/"
