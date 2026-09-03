@@ -19,8 +19,8 @@ reviewable, and compatible with the current stable Homebrew release.
   bundle name, CPU architecture, minimum macOS version, bundle identifier, and
   signing/notarization status.
 - Pin every versioned download with a SHA-256 checksum.
-- Add a `verified:` value when the download host differs from the homepage
-  host or when the URL redirects through GitHub release infrastructure.
+- Do not use the cask URL's deprecated `verified:` parameter. Current Homebrew
+  audits reject it, including for GitHub release redirects.
 - Add a working `livecheck` block. If the asset name contains build metadata,
   retain it as an additional comma-separated version component.
 - Add new automatically maintained casks to the `casks` array in

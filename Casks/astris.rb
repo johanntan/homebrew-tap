@@ -1,9 +1,8 @@
 cask "astris" do
-  version "1.0.24,da061dba2"
-  sha256 "31aa243feb3c700c8710fac41333780b73d68ae2588341cc1577d4b51e9e7338"
+  version "1.0.25,66283e026"
+  sha256 "136c15b539677a6ab116da42a41ac0e20fe271dbcf78ad16c0cb8a342fb04bde"
 
-  url "https://github.com/V380-Ori/Astris.Binaries/releases/download/astris-#{version.csv.first}/Astris-#{version.csv.first}%2B#{version.csv.second}.dmg",
-      verified: "github.com/V380-Ori/Astris.Binaries/"
+  url "https://github.com/V380-Ori/Astris.Binaries/releases/download/astris-#{version.csv.first}/Astris-#{version.csv.first}%2B#{version.csv.second}.dmg"
   name "Astris"
   desc "Nintendo Switch 1 emulator based on Ryujinx"
   homepage "https://github.com/V380-Ori/Astris.Binaries"
