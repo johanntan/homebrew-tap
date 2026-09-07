@@ -26,8 +26,7 @@ cask "astris" do
   app "Astris.app"
 
   postflight_steps do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Astris.app"]
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Astris.app"]
   end
 
   caveats <<~EOS

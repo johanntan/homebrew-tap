@@ -37,7 +37,8 @@ repository because they are unsigned, ad-hoc signed, or not notarized.
 - Do not add a Gatekeeper bypass by default. Any bypass must be explicitly
   requested by the user, scoped to one cask, and disclosed in both the cask
   caveats and `README.md`.
-- Astris is an explicit exception: its `postflight` removes only the
+- Astris is an explicit exception: its `postflight_steps` block uses the
+  declarative `run` step and `{{appdir}}` template to remove only the
   `com.apple.quarantine` attribute from the installed `Astris.app`. Preserve
   this behavior unless the user asks to remove it.
 - Homebrew 6 no longer supports `--no-quarantine`. Tell users to approve a
